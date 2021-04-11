@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <title>Weather App</title>
 </head>
 <body>
+<div class="main-container">
     <div class="container">
     <form action="/" method="POST">
-        <h1 class="heading">Weather WebApp</h1>
-        <div class="line"></div>
-        <p>
+        <h1 class="heading"><i class="fas fa-cloud"></i> Weather app <i class="fas fa-cloud"></i></h1>
+            <p>
             City: 
             <input type="text" name="cityName" id="cityInput" placeholder="Delhi" required autocomplete="off">
-        </p>
-                <p>
+            </p>
+            <p>
                 Unit:
                 <select name="unit" id="unit" required>
                 <option value="">--Select Unit Type--</option>
@@ -23,9 +26,10 @@
                 <option value="metric">Metric</option>
                 <option value="imperial">Imperial</option>
                 </select>
-                </p>
+            </p>
             <button id="button" type="submit">Get Now</button>
         </form>
     </div>
+</div>
 </body>
 </html>

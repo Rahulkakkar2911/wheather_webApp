@@ -3,10 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/result.css">
     <title>Weather</title>      
 </head>
 <body>
     <div class="container">
+        <div class="container-form">
+            <h1 class="heading">The weather today in <%= city %> is <%= descOfWeather %> and the Temperature is <%= Temperature %> <%=unitmeasure%></h1>
+            <img class="img" src="<%= imgUrl %> " alt="weatherIcon">
+            <form action="/result" method="GET">
+                <button class="btn-try-another" type="submit">Try Another!</button>
+            </form>
+        </div>
     </div>
 </body>
 </html>
